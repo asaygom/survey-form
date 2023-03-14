@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>ASAYGOM Survey Form</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">ASAYGOM Survey Form</h1>
+    <p id="description">Example of survey form, you can leave your comments about it</p>
+    <form id="survey-form">
+      <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" class="form-control" required/>
+      </div>
+      <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" class="form-control" required/>
+      </div>
+      <div class="form-group">
+      <label id="number-label" for="number">Age</label>
+      <input id="number" type="number" min="21" max="120" placeholder="Age" class="form-control" name="age"/>
+      </div>
+      <div class="form-group">
+      <p class="form-text">Select an option</p>
+      <select id="dropdown" class="form-control">
+        <option>Select an option</option>
+        <option>First option</option>
+        <option>Second option</option>
+      </select>
+      </div>
+      <div class="form-group">
+      <p class="form-text">How do you describe this form?</p>
+      <label>
+      <input type="radio" name="user-choice" class="input-radio" value="excellent" checked>
+      Excellent
+      </label>
+      <label><input type="radio" name="user-choice" class="input-radio" value="good">
+      Good
+      </label>
+      <label>
+      <input type="radio" name="user-choice" class="input-radio" value="improvable">
+      Improvable
+      </label>
+      </div>
+      <div class="form-group">
+      <p class="form-text">Check all that apply</p>
+      <label><input type="checkbox" value="first-checkbox" class="input-checkbox">You want to suscribe to my mailing list (this is just an option, there is not any mailing list)</label>
+      <label><input type="checkbox" value="second-checkbox" class="input-checkbox">You just want to test this checkbox</label>
+      </div>
+      <div class="form-group">
+      <p class="form-text">Any comments or suggestions?</p>
+      <textarea placeholder="Leave your comments"></textarea>
+      </div>
+      <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
